@@ -10,12 +10,12 @@ npm install use-utm
 ## Usage
 
 ```javascript
-import { useUtm } from 'use-utm';
+import { utm } from 'use-utm';
 const {
     source,
     medium,
     campaign,
     term,
     content 
-} = useUtm(window.location.href);
+} = utm(window.location.href);
 ```
