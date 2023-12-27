@@ -1,1 +1,1 @@
-export {useUtm} from "./useUtm";
+export { useUtm } from "./useUtm";

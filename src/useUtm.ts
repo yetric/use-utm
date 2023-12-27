@@ -4,7 +4,7 @@ type MarketingParams = {
     campaign: string | null;
     term: string | null;
     content: string | null;
-}
+};
 
 export const useUtm = (): MarketingParams => {
     const urlParams = new URLSearchParams(window.location.search);
@@ -19,6 +19,6 @@ export const useUtm = (): MarketingParams => {
         medium: utmMedium,
         campaign: utmCampaign,
         term: utmTerm,
-        content: utmContent
+        content: utmContent,
     };
-}
+};
