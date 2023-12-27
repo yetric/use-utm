@@ -4,7 +4,8 @@
   "description": "React hook for getting UTM parameters from the URL",
   "main": "index.js",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\""
   },
   "keywords": [],
   "author": "Mattias Hising <mattias@yetric.com>",
@@ -15,6 +16,11 @@
   },
   "devDependencies": {
     "@types/react": "^18.2.45",
+    "@typescript-eslint/eslint-plugin": "^6.16.0",
+    "@typescript-eslint/parser": "^6.16.0",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
     "typescript": "^5.3.3"
   }
 }
