@@ -6,8 +6,9 @@ type MarketingParams = {
     content: string | null;
 };
 
-export const useUtm = (): MarketingParams => {
-    const urlParams = new URLSearchParams(window.location.search);
+export const useUtm = (url: string): MarketingParams => {
+    const urlObject = new URL(url);
+    const urlParams = new URLSearchParams(urlObject.search);
     const utmSource = urlParams.get("utm_source");
     const utmMedium = urlParams.get("utm_medium");
     const utmCampaign = urlParams.get("utm_campaign");
