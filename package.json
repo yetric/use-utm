@@ -1,0 +1,20 @@
+{
+  "name": "use-utm",
+  "version": "1.0.0",
+  "description": "React hook for getting UTM parameters from the URL",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "Mattias Hising <mattias@yetric.com>",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.45",
+    "typescript": "^5.3.3"
+  }
+}
