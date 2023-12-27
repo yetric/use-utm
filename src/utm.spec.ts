@@ -1,4 +1,4 @@
-import { addUtm, utm } from "./utm";
+import { addUtm, removeUtm, utm } from "./utm";
 
 describe("useUtm", () => {
     it("should return an object with the correct properties", () => {
@@ -20,5 +20,11 @@ describe("useUtm", () => {
         expect(urlWithUtmParams).toEqual(
             "https://www.example.com/?utm_source=google&utm_medium=cpc&utm_campaign=summer",
         );
+    });
+
+    it("Should remove utm params from a url", () => {
+        const url = "https://www.example.com/?utm_source=google&utm_medium=cpc&utm_campaign=summer";
+        const urlWithoutUtmParams = removeUtm(url);
+        expect(urlWithoutUtmParams).toEqual("https://www.example.com/");
     });
 });

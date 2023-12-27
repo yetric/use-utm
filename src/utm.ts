@@ -48,14 +48,6 @@ export const useUtm = (): MarketingParams => {
     return params;
 };
 
-export const useUtmFromLocation = (): MarketingParams => {
-    return utm(window.location.href);
-};
-
-export const useUtmFromReferrer = (): MarketingParams => {
-    return utm(document.referrer);
-};
-
 export const addUtm = (url: string, utmParams: MarketingParams): string => {
     const urlObject = new URL(url);
     const urlParams = new URLSearchParams(urlObject.search);
@@ -74,6 +66,18 @@ export const addUtm = (url: string, utmParams: MarketingParams): string => {
     if (utmParams.content) {
         urlParams.set("utm_content", utmParams.content);
     }
+    urlObject.search = urlParams.toString();
+    return urlObject.toString();
+};
+
+export const removeUtm = (url: string): string => {
+    const urlObject = new URL(url);
+    const urlParams = new URLSearchParams(urlObject.search);
+    urlParams.delete("utm_source");
+    urlParams.delete("utm_medium");
+    urlParams.delete("utm_campaign");
+    urlParams.delete("utm_term");
+    urlParams.delete("utm_content");
     urlObject.search = urlParams.toString();
     return urlObject.toString();
 };
