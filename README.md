@@ -9,7 +9,7 @@ npm install use-utm
 ```
 ## Usage
 
-### `utm(url: string): UtmParameters`
+##### `utm(url: string): UtmParameters`
 
 ```javascript
 import { utm } from 'use-utm';
@@ -22,7 +22,7 @@ const {
 } = utm(window.location.href);
 ```
 
-### `addUtm(url: string, utmParams: UtmParameters): string`
+##### `addUtm(url: string, utmParams: UtmParameters): string`
 
 ```javascript
 import { addUtm } from 'use-utm';
@@ -36,7 +36,7 @@ const utmParams = {
 const urlWithUtmParams = addUtm(url, utmParams);
 ```
 
-### `removeUtm(url: string): string`
+##### `removeUtm(url: string): string`
 
 ```javascript
 import { removeUtm } from 'use-utm';
@@ -44,7 +44,7 @@ const url = "https://www.example.com/?utm_source=google&utm_medium=cpc&utm_campa
 const urlWithoutUtmParams = removeUtm(url);
 ```
 
-### `useUtm(): UtmParameters`
+##### `useUtm(): UtmParameters`
 
 ```javascript
 import { useUtm } from 'use-utm';
