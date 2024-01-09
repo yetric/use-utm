@@ -1,7 +1,7 @@
 {
   "name": "use-utm",
-  "version": "1.0.2",
-  "description": "React hook for getting UTM parameters from the URL",
+  "version": "1.0.3",
+  "description": "Small library for getting/setting and removing UTM parameters from the URL",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
   "types": "./dist/esm/index.d.ts",

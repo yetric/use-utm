@@ -11,7 +11,7 @@ type MarketingParams = {
 export const utm = (url: string): MarketingParams => {
     const urlObject = new URL(url);
     const urlParams = new URLSearchParams(urlObject.search);
-    const utmSource = urlParams.get("utm_source");
+    const utmSource = urlParams.get("utm_source") || urlParams.get("source") || urlParams.get("ref");
     const utmMedium = urlParams.get("utm_medium");
     const utmCampaign = urlParams.get("utm_campaign");
     const utmTerm = urlParams.get("utm_term");
