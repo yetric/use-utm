@@ -9,6 +9,18 @@ describe("useUtm", () => {
         expect(campaign).toBeUndefined();
     });
 
+    it("should be able to parse ref as source", () => {
+        const urlWithRef = "https://www.example.com/?ref=google";
+        const { source } = utm(urlWithRef);
+        expect(source).toEqual("google");
+    });
+
+    it("should be able to parse source as source", () => {
+        const urlWithSource = "https://www.example.com/?source=google";
+        const { source } = utm(urlWithSource);
+        expect(source).toEqual("google");
+    });
+
     it("Should add utm params to a url", () => {
         const url = "https://www.example.com/";
         const utmParams = {
