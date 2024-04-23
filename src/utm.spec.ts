@@ -30,7 +30,7 @@ describe("useUtm", () => {
         };
         const urlWithUtmParams = addUtm(url, utmParams);
         expect(urlWithUtmParams).toEqual(
-            "https://www.example.com/?utm_source=google&utm_medium=cpc&utm_campaign=summer",
+            "https://www.example.com/?utm_source=google&utm_medium=cpc&utm_campaign=summer"
         );
     });
 
