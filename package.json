@@ -1,6 +1,6 @@
 {
   "name": "use-utm",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Small library for getting/setting and removing UTM parameters from the URL",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
