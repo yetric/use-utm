@@ -27,6 +27,7 @@
   ],
   "author": "Mattias Hising <mattias@yetric.com>",
   "license": "MIT",
+  "prettier": "yetric-prettier-config",
   "dependencies": {
     "react": ">=16",
     "react-dom": "^18.2.0"
@@ -46,7 +47,8 @@
     "prettier": "^3.1.1",
     "ts-jest": "^29.1.1",
     "ts-node": "^10.9.2",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "yetric-prettier-config": "^1.0.1"
   },
   "peerDependencies": {
     "react": ">=16"
