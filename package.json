@@ -18,7 +18,8 @@
     "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",
     "prettier": "prettier --write \"{src,tests,example/src}/**/*.{js,ts,jsx,tsx}\"",
     "prepare": "npm run build",
-    "prepublishOnly": "npm run test && npm run prettier && npm run lint"
+    "prepublishOnly": "npm run test && npm run prettier && npm run lint",
+    "publish": "npm version patch --force && npm publish"
   },
   "keywords": [
     "react",
